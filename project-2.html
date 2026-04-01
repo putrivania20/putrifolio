@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Segmentation Analysis - Machine Learning project using Python">
+    <title>Customer Segmentation Analysis | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">PutriFolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">← Back to Projects</a>
+            <h1>Customer Segmentation Analysis</h1>
+            <p class="project-subtitle">Machine learning project identifying distinct market segments using clustering algorithms</p>
+            <div class="project-meta">
+                <span class="meta-tag">Machine Learning</span>
+                <span class="meta-tag">Python</span>
+                <span class="meta-tag">Analytics</span>
+                <span class="meta-tag">ML</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Image -->
+    <section class="project-image-section">
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1000&h=500&fit=crop" alt="Customer Segmentation Preview" class="project-feature-image">
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-grid">
+                <!-- Main Content -->
+                <div class="project-main">
+                    <!-- Overview -->
+                    <div class="project-section">
+                        <h2>Project Overview</h2>
+                        <p>Using Python and advanced statistical methods, this project identified 5 distinct customer segments based on purchasing behavior, demographics, and engagement patterns. The analysis revealed actionable insights for targeted marketing campaigns.</p>
+                        <p>This machine learning project leverages clustering algorithms to understand customer behavior patterns and create data-driven marketing strategies.</p>
+                    </div>
+
+                    <!-- Challenges -->
+                    <div class="project-section">
+                        <h2>Challenges & Solutions</h2>
+                        <div class="challenge-item">
+                            <h3>Challenge: Data Dimensionality</h3>
+                            <p>High-dimensional customer data made clustering computationally expensive.</p>
+                            <p><strong>Solution:</strong> Applied PCA (Principal Component Analysis) to reduce dimensions while preserving 95% of variance.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Challenge: Optimal Number of Clusters</h3>
+                            <p>Determining the right number of customer segments was unclear.</p>
+                            <p><strong>Solution:</strong> Used elbow method, silhouette analysis, and domain expertise to identify 5 optimal segments.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Challenge: Model Validation</h3>
+                            <p>Ensuring segments were stable and meaningful required proper validation.</p>
+                            <p><strong>Solution:</strong> Implemented cross-validation and conducted business reviews to validate segment quality.</p>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="project-section">
+                        <h2>Key Features</h2>
+                        <ul class="features-detailed">
+                            <li>
+                                <strong>K-means Clustering</strong>
+                                <p>Partitioning algorithm identifying 5 distinct customer groups</p>
+                            </li>
+                            <li>
+                                <strong>RFM Analysis</strong>
+                                <p>Recency, Frequency, Monetary analysis for customer value assessment</p>
+                            </li>
+                            <li>
+                                <strong>Customer Lifetime Value</strong>
+                                <p>Predictive model estimating long-term customer profitability</p>
+                            </li>
+                            <li>
+                                <strong>Segment Profiling</strong>
+                                <p>Detailed characteristics of each segment for marketing strategies</p>
+                            </li>
+                            <li>
+                                <strong>Churn Prediction</strong>
+                                <p>Identifying at-risk customers for targeted retention campaigns</p>
+                            </li>
+                            <li>
+                                <strong>Automated Reporting</strong>
+                                <p>Monthly segment updates and trend monitoring</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="project-section">
+                        <h2>Results & Impact</h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <h3>45%</h3>
+                                <p>Email campaign effectiveness increase</p>
+                            </div>
+                            <div class="result-card">
+                                <h3>28%</h3>
+                                <p>Customer retention improvement</p>
+                            </div>
+                            <div class="result-card">
+                                <h3>3x</h3>
+                                <p>Higher conversion rates</p>
+                            </div>
+                            <div class="result-card">
+                                <h3>$2.5M</h3>
+                                <p>Additional annual revenue</p>
+                            </div>
+                        </div>
+                        <p>The segmentation strategy increased email campaign effectiveness by 45% and improved customer retention by 28%. Targeted campaigns based on segments achieved 3x higher conversion rates compared to generic campaigns, resulting in $2.5M additional annual revenue.</p>
+                    </div>
+
+                    <!-- Technologies -->
+                    <div class="project-section">
+                        <h2>Technologies & Tools</h2>
+                        <div class="tech-grid">
+                            <div class="tech-card">
+                                <span class="tech-icon">🐍</span>
+                                <h4>Python</h4>
+                                <p>Data processing and ML algorithms</p>
+                            </div>
+                            <div class="tech-card">
+                                <span class="tech-icon">📊</span>
+                                <h4>Scikit-learn</h4>
+                                <p>Machine learning library</p>
+                            </div>
+                            <div class="tech-card">
+                                <span class="tech-icon">📈</span>
+                                <h4>Pandas</h4>
+                                <p>Data manipulation and analysis</p>
+                            </div>
+                            <div class="tech-card">
+                                <span class="tech-icon">📉</span>
+                                <h4>Matplotlib</h4>
+                                <p>Data visualization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="project-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Project Details</h3>
+                        <dl>
+                            <dt>Category</dt>
+                            <dd>Machine Learning</dd>
+                            <dt>Duration</dt>
+                            <dd>2 months</dd>
+                            <dt>Team Size</dt>
+                            <dd>2 Data Scientists</dd>
+                            <dt>Status</dt>
+                            <dd><span class="status-badge completed">Completed</span></dd>
+                        </dl>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Technologies</h3>
+                        <div class="tag-list">
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Links</h3>
+                        <a href="https://github.com" class="sidebar-link" target="_blank">GitHub Repository</a>
+                        <a href="#contact" class="sidebar-link">Contact Me</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+        <div class="container">
+            <h2>Related Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">📊</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sales Performance Dashboard</h3>
+                        <p>Interactive Tableau dashboard analyzing quarterly sales trends.</p>
+                        <div class="project-tags">
+                            <span class="tag">Tableau</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                        <a href="project-1.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">💹</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Financial Forecasting Model</h3>
+                        <p>Time series forecasting with 92% accuracy for strategic planning.</p>
+                        <div class="project-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">Statistics</span>
+                        </div>
+                        <a href="project-3.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">🎯</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Marketing Campaign Analysis</h3>
+                        <p>Multi-channel analysis improving ROI by 35%.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <a href="project-4.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="project-cta">
+        <div class="container">
+            <h2>Need ML Project Solutions?</h2>
+            <p>I specialize in machine learning and predictive analytics.</p>
+            <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Data Analyst Portfolio. All rights reserved.</p>
+            <p>Designed & Built by Putri Vania</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
