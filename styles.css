@@ -86,12 +86,21 @@ body.dark-mode .navbar {
 .logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--dark-text);
     text-decoration: none;
     transition: var(--transition);
+}
+
+body.dark-mode .logo a {
+    color: var(--light-text);
+}
+
+.logo a span {
+    color: #006699;
+}
+
+body.dark-mode .logo a span {
+    color: #3b82f6;
 }
 
 .logo a:hover {
@@ -479,6 +488,66 @@ body.dark-mode .skill-bar {
     border-radius: 4px;
     animation: skillFill 1s ease-out forwards;
 }
+
+/* ==================== Tools Section ==================== */
+.tools {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
+}
+
+body.dark-mode .tools {
+    background-color: var(--dark-bg);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tool-card {
+    background-color: var(--light-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+body.dark-mode .tool-card {
+    background-color: #1e293b;
+    border-color: var(--dark-border);
+}
+
+.tool-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary-color);
+}
+
+.tool-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.tool-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+body.dark-mode .tool-card h3 {
+    color: var(--light-text);
+}
+
 
 @keyframes skillFill {
     from {

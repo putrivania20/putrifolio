@@ -2,10 +2,10 @@
 const projectsData = [
     {
         id: 1,
-        title: "Sales Performance Dashboard",
+        title: "Superstore Dashboard",
         icon: "📊",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-        shortDescription: "Interactive dashboard analyzing quarterly sales trends and regional performance metrics using advanced data visualization techniques.",
+        image: "Dashboard Superstore Poppins.png?w=600&h=400&fit=crop",
+        shortDescription: "An interactive Superstore dashboard analyzing sales, profit, and customer trends across regions and categories—highlighting key insights to support better business decisions.",
         fullDescription: "A comprehensive dashboard that provides real-time insights into sales performance across multiple regions and product categories.",
         overview: "This project involved creating an interactive Tableau dashboard that consolidates sales data from multiple sources. The dashboard allows stakeholders to filter by region, timeframe, and product category to quickly identify trends and anomalies.",
         features: [
@@ -26,7 +26,7 @@ const projectsData = [
         id: 2,
         title: "Customer Segmentation Analysis",
         icon: "📈",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+        image: "D:\Web Dev\dataporto\Dashboard Superstore Poppins.png w=600&h=400&fit=crop",
         shortDescription: "Comprehensive customer analysis using Python and machine learning to identify market segments and improve targeting strategies.",
         fullDescription: "A machine learning project that analyzes customer behavior patterns to identify distinct market segments for targeted marketing.",
         overview: "Using Python and advanced statistical methods, this project identified 5 distinct customer segments based on purchasing behavior, demographics, and engagement patterns. The analysis revealed actionable insights for targeted marketing campaigns.",
