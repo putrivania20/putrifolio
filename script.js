@@ -4,7 +4,7 @@ const projectsData = [
         id: 1,
         title: "Superstore Dashboard",
         icon: "📊",
-        image: "Dashboard Superstore Poppins.png?w=600&h=400&fit=crop",
+        image: "assets/Dashboard Superstore Poppins.png",
         shortDescription: "An interactive Superstore dashboard analyzing sales, profit, and customer trends across regions and categories—highlighting key insights to support better business decisions.",
         fullDescription: "A comprehensive dashboard that provides real-time insights into sales performance across multiple regions and product categories.",
         overview: "This project involved creating an interactive Tableau dashboard that consolidates sales data from multiple sources. The dashboard allows stakeholders to filter by region, timeframe, and product category to quickly identify trends and anomalies.",
@@ -26,7 +26,7 @@ const projectsData = [
         id: 2,
         title: "Customer Segmentation Analysis",
         icon: "📈",
-        image: "D:\Web Dev\dataporto\Dashboard Superstore Poppins.png w=600&h=400&fit=crop",
+        image: "assets/Dashboard Superstore Poppins.png",
         shortDescription: "Comprehensive customer analysis using Python and machine learning to identify market segments and improve targeting strategies.",
         fullDescription: "A machine learning project that analyzes customer behavior patterns to identify distinct market segments for targeted marketing.",
         overview: "Using Python and advanced statistical methods, this project identified 5 distinct customer segments based on purchasing behavior, demographics, and engagement patterns. The analysis revealed actionable insights for targeted marketing campaigns.",
@@ -152,22 +152,15 @@ function openProjectModal(projectId) {
     
     // Handle image - show actual image if available, otherwise use icon
     const imageElement = document.getElementById('modalProjectImage');
-    const modalImageContainer = document.querySelector('.modal-image');
     
     if (project.image) {
-        // Create an image element
-        const img = document.createElement('img');
-        img.src = project.image;
-        img.alt = project.title;
-        img.style.width = '100%';
-        img.style.height = '100%';
-        img.style.objectFit = 'cover';
-        
-        // Clear previous content and add image
-        imageElement.innerHTML = '';
-        imageElement.appendChild(img);
+        // Clear text/icon and set background image
+        imageElement.textContent = '';
+        const encodedPath = encodeURI(project.image);
+        imageElement.style.backgroundImage = `url("${encodedPath}")`;
     } else {
         // Fallback to icon
+        imageElement.style.backgroundImage = 'none';
         imageElement.textContent = project.icon;
     }
     
