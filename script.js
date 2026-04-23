@@ -16,17 +16,17 @@ const projectsData = [
             "Performance comparison metrics",
             "Export reports to PDF"
         ],
-        tags: ["Tableau", "SQL", "Excel"],
+        tags: ["Tableau", "Excel"],
         results: "The dashboard reduced reporting time by 70% and improved decision-making speed. Management can now identify opportunities and issues within hours instead of days, resulting in a 15% increase in quarterly sales.",
         link: "#",
         github: "https://github.com",
-        category: "Business Analytics"
+        category: ["Business Analytics", "Data Visualization"]
     },
     {
         id: 2,
         title: "Customer Segmentation Analysis",
         icon: "📈",
-        image: "assets/Dashboard Superstore Poppins.png",
+        image: "assets/customer_segmentation.png",
         shortDescription: "Comprehensive customer analysis using Python and machine learning to identify market segments and improve targeting strategies.",
         fullDescription: "A machine learning project that analyzes customer behavior patterns to identify distinct market segments for targeted marketing.",
         overview: "Using Python and advanced statistical methods, this project identified 5 distinct customer segments based on purchasing behavior, demographics, and engagement patterns. The analysis revealed actionable insights for targeted marketing campaigns.",
@@ -48,7 +48,7 @@ const projectsData = [
         id: 3,
         title: "Financial Forecasting Model",
         icon: "💹",
-        image: "https://images.unsplash.com/photo-1579532537598-459f09a18b5d?w=600&h=400&fit=crop",
+        image: "assets/financial_forecasting.png",
         shortDescription: "Time series analysis and forecasting model predicting future financial trends with 92% accuracy for strategic planning.",
         fullDescription: "An advanced time series forecasting model that predicts financial trends with high accuracy using statistical methods and machine learning.",
         overview: "This model uses ARIMA, Prophet, and ensemble methods to forecast financial metrics 12 months in advance. Historical data from 5 years was analyzed to build a robust predictive model.",
@@ -70,7 +70,7 @@ const projectsData = [
         id: 4,
         title: "Marketing Campaign Analysis",
         icon: "🎯",
-        image: "https://images.unsplash.com/photo-1460925895917-adf4198f5e7d?w=600&h=400&fit=crop",
+        image: "assets/marketing_analytics.png",
         shortDescription: "Multi-channel marketing campaign analysis evaluating ROI across platforms and recommending optimization strategies.",
         fullDescription: "A comprehensive analysis of marketing campaigns across multiple channels to optimize spending and improve ROI.",
         overview: "This analysis examined 24 marketing campaigns across email, social media, paid search, and display advertising channels. Detailed ROI calculations helped identify the most effective channels and strategies.",
@@ -92,7 +92,7 @@ const projectsData = [
         id: 5,
         title: "Data Quality Assessment",
         icon: "🔍",
-        image: "https://images.unsplash.com/photo-1516321318423-f06f70259b51?w=600&h=400&fit=crop",
+        image: "assets/data_quality.png",
         shortDescription: "Comprehensive data audit identifying anomalies and data quality issues with recommendations for database optimization.",
         fullDescription: "A detailed data quality audit that identified data issues and provided actionable recommendations for improvement.",
         overview: "This assessment examined data quality across 50+ datasets in the company's data warehouse. It identified missing values, duplicates, inconsistencies, and data validation issues affecting analytics accuracy.",
@@ -114,7 +114,7 @@ const projectsData = [
         id: 6,
         title: "Operational Efficiency Study",
         icon: "📋",
-        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+        image: "assets/operational_efficiency.png",
         shortDescription: "Process optimization analysis identifying bottlenecks and proposing solutions that increased operational efficiency by 35%.",
         fullDescription: "A process analysis study that identified inefficiencies and optimization opportunities across multiple operational areas.",
         overview: "This study examined key operational processes through data analysis, interviews, and process mining. It identified 8 major inefficiencies causing delays and additional costs.",
@@ -180,9 +180,10 @@ function openProjectModal(projectId) {
     // Add meta information
     const metaContent = document.querySelector('.modal-meta');
     if (metaContent) {
-        metaContent.innerHTML = `
-            <span class="modal-category">${project.category}</span>
-        `;
+        const categories = Array.isArray(project.category) 
+            ? project.category.map(cat => `<span class="modal-category">${cat}</span>`).join('')
+            : `<span class="modal-category">${project.category}</span>`;
+        metaContent.innerHTML = categories;
     }
     
     // Update buttons - Show View Project and GitHub links

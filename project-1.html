@@ -1,308 +1,410 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sales Performance Dashboard - Interactive Tableau dashboard project">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sales Performance Dashboard - Interactive Tableau dashboard project"
+    />
     <title>Sales Performance Dashboard | Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html">Putri<span>folio</span></a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html#home" class="nav-link">Home</a></li>
-                <li><a href="index.html#about" class="nav-link">About</a></li>
-                <li><a href="index.html#skills" class="nav-link">Skills</a></li>
-                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
-                <li><a href="index.html#services" class="nav-link">Services</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-buttons">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <span class="sun-icon">☀️</span>
-                    <span class="moon-icon">🌙</span>
-                </button>
-                <button class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="index.html">Putri<span>folio</span></a>
         </div>
+        <ul class="nav-menu">
+          <li><a href="index.html#home" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#services" class="nav-link">Services</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
     </nav>
 
     <!-- Project Hero -->
     <section class="project-hero">
-        <div class="container">
-            <a href="index.html#projects" class="back-link">← Back to Projects</a>
-            <h1>Superstore Dashboard</h1>
-            <p class="project-subtitle">An interactive Superstore dashboard that explores sales, profit, and customer trends across regions and product categories. It highlights key insights such as top-performing segments, seasonal patterns, and profitability drivers, enabling businesses to identify opportunities and optimize strategies.</p>
-            <div class="project-meta">
-                <span class="meta-tag">Business Analytics</span>
-                <span class="meta-tag">Tableau</span>
-                <span class="meta-tag">SQL</span>
-                <span class="meta-tag">Excel</span>
-            </div>
+      <div class="container">
+        <a href="index.html#projects" class="back-link">← Back to Projects</a>
+        <h1>Superstore Dashboard</h1>
+        <p class="project-subtitle">
+          An interactive Superstore dashboard that explores sales, profit, and
+          customer trends across regions and product categories. It highlights
+          key insights such as top-performing segments, seasonal patterns, and
+          profitability drivers, enabling businesses to identify opportunities
+          and optimize strategies.
+        </p>
+        <div class="project-meta">
+          <span class="meta-tag">Business Analytics</span>
+          <span class="meta-tag">Tableau</span>
+          <span class="meta-tag">Excel</span>
         </div>
+      </div>
     </section>
 
-    <!-- Project Image -->
+    <!-- Project Embedded -->
     <section class="project-image-section">
-        <div class="container">
-        <div class='tableauPlaceholder' id='viz1776237749266' style='position: relative; max-width: 100%; height: auto;'>
-  <noscript>
-    <a href='#'>
-      <img alt='Dashboard' 
-           src='https://public.tableau.com/static/images/Su/SuperstoreDashboard_17700159459440/Dashboard/1_rss.png' 
-           style='border: none; width: 100%;' />
-    </a>
-  </noscript>
+      <div class="container">
+        <div
+          class="tableauPlaceholder"
+          id="tableauViz"
+          style="
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <noscript>
+            <a href="#">
+              <img
+                alt="Dashboard"
+                src="https://public.tableau.com/static/images/Su/SuperstoreDashboard_17700159459440/Dashboard/1_rss.png"
+                style="border: none; width: 100%"
+              />
+            </a>
+          </noscript>
 
-  <object class='tableauViz' style='width:100%; height:700px;'>
-    <param name='host_url' value='https://public.tableau.com/' />
-    <param name='embed_code_version' value='3' />
-    <param name='name' value='SuperstoreDashboard_17700159459440/Dashboard' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-  </object>
-</div>
-
-<script type='text/javascript'>
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  document.body.appendChild(scriptElement);
-</script>
+          <object class="tableauViz" style="display: none">
+            <param name="host_url" value="https://public.tableau.com/" />
+            <param name="embed_code_version" value="3" />
+            <param
+              name="name"
+              value="SuperstoreDashboard_17700159459440/Dashboard"
+            />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+          </object>
         </div>
+      </div>
     </section>
+
+    <script type="text/javascript">
+      var divElement = document.getElementById("tableauViz");
+      var vizElement = divElement.getElementsByTagName("object")[0];
+
+      vizElement.style.width = "1000px";
+      vizElement.style.height = "730px";
+      vizElement.style.maxWidth = "100%";
+      vizElement.style.margin = "0 auto";
+
+      var scriptElement = document.createElement("script");
+      scriptElement.src =
+        "https://public.tableau.com/javascripts/api/viz_v1.js";
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 
     <!-- Project Content -->
     <section class="project-content">
-        <div class="container">
-            <div class="project-grid">
-                <!-- Main Content -->
-                <div class="project-main">
-                    <!-- Overview -->
-                    <div class="project-section">
-                        <h2>Project Overview</h2>
-                        <p>This project involved creating an interactive Tableau dashboard that consolidates sales data from multiple sources. The dashboard allows stakeholders to filter by region, timeframe, and product category to quickly identify trends and anomalies.</p>
-                        <p>The solution provides real-time insights into sales performance across multiple regions and product categories, enabling faster decision-making and improved business outcomes.</p>
-                    </div>
-
-                    <!-- Challenges -->
-                    <div class="project-section">
-                        <h2>Challenges & Solutions</h2>
-                        <div class="challenge-item">
-                            <h3>Challenge: Data Integration</h3>
-                            <p>Sales data was scattered across multiple databases with inconsistent formats and structures.</p>
-                            <p><strong>Solution:</strong> Created a robust ETL pipeline using SQL to consolidate and standardize all data sources into a single data warehouse.</p>
-                        </div>
-                        <div class="challenge-item">
-                            <h3>Challenge: Performance</h3>
-                            <p>Dashboard was slow with large datasets (5+ million records), causing long load times.</p>
-                            <p><strong>Solution:</strong> Implemented data aggregation, indexing strategies, and optimized Tableau calculations for real-time performance.</p>
-                        </div>
-                        <div class="challenge-item">
-                            <h3>Challenge: User Adoption</h3>
-                            <p>Stakeholders needed training and documentation to effectively use the new dashboard.</p>
-                            <p><strong>Solution:</strong> Created user guides, conducted training sessions, and implemented interactive tooltips in the dashboard.</p>
-                        </div>
-                    </div>
-
-                    <!-- Key Features -->
-                    <div class="project-section">
-                        <h2>Key Features</h2>
-                        <ul class="features-detailed">
-                            <li>
-                                <strong>Real-time Data Refresh</strong>
-                                <p>Automatic hourly data updates ensure stakeholders always see the latest sales figures</p>
-                            </li>
-                            <li>
-                                <strong>Interactive Filtering</strong>
-                                <p>Filter by region, product category, time period, and salesperson for granular analysis</p>
-                            </li>
-                            <li>
-                                <strong>Trend Analysis</strong>
-                                <p>Monthly and quarterly comparison charts showing growth patterns and seasonal trends</p>
-                            </li>
-                            <li>
-                                <strong>Sales Forecasting</strong>
-                                <p>Predictive visualization showing projected sales based on historical trends</p>
-                            </li>
-                            <li>
-                                <strong>Performance Metrics</strong>
-                                <p>KPI cards displaying revenue, growth %, and performance against targets</p>
-                            </li>
-                            <li>
-                                <strong>Export Reports</strong>
-                                <p>One-click PDF export for sharing reports with executives and stakeholders</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Results -->
-                    <div class="project-section">
-                        <h2>Results & Impact</h2>
-                        <div class="results-grid">
-                            <div class="result-card">
-                                <h3>70%</h3>
-                                <p>Reduction in reporting time</p>
-                            </div>
-                            <div class="result-card">
-                                <h3>15%</h3>
-                                <p>Increase in quarterly sales</p>
-                            </div>
-                            <div class="result-card">
-                                <h3>Hours to Minutes</h3>
-                                <p>Decision-making time improved</p>
-                            </div>
-                            <div class="result-card">
-                                <h3>100%</h3>
-                                <p>Stakeholder adoption rate</p>
-                            </div>
-                        </div>
-                        <p>The dashboard reduced reporting time by 70% and improved decision-making speed. Management can now identify opportunities and issues within hours instead of days, resulting in a 15% increase in quarterly sales. The success of this project led to similar dashboards being created for other departments.</p>
-                    </div>
-
-                    <!-- Technologies -->
-                    <div class="project-section">
-                        <h2>Technologies & Tools</h2>
-                        <div class="tech-grid">
-                            <div class="tech-card">
-                                <span class="tech-icon">📊</span>
-                                <h4>Tableau</h4>
-                                <p>Data visualization and dashboard creation</p>
-                            </div>
-                            <div class="tech-card">
-                                <span class="tech-icon">🗄️</span>
-                                <h4>SQL</h4>
-                                <p>Database queries and data extraction</p>
-                            </div>
-                            <div class="tech-card">
-                                <span class="tech-icon">📈</span>
-                                <h4>Excel</h4>
-                                <p>Data analysis and pivot tables</p>
-                            </div>
-                            <div class="tech-card">
-                                <span class="tech-icon">🔄</span>
-                                <h4>ETL</h4>
-                                <p>Data pipeline and integration</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar -->
-                <aside class="project-sidebar">
-                    <div class="sidebar-card">
-                        <h3>Project Details</h3>
-                        <dl>
-                            <dt>Category</dt>
-                            <dd>Business Analytics</dd>
-                            <dt>Duration</dt>
-                            <dd>3 months</dd>
-                            <dt>Team Size</dt>
-                            <dd>1 Analyst, 1 Database Admin</dd>
-                            <dt>Status</dt>
-                            <dd><span class="status-badge completed">Completed</span></dd>
-                        </dl>
-                    </div>
-
-                    <div class="sidebar-card">
-                        <h3>Technologies</h3>
-                        <div class="tag-list">
-                            <span class="tag">Tableau</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">Excel</span>
-                            <span class="tag">ETL</span>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-card">
-                        <h3>Links</h3>
-                        <a href="#" class="sidebar-link" target="_blank">View Dashboard</a>
-                        <a href="https://github.com" class="sidebar-link" target="_blank">GitHub Repository</a>
-                        <a href="#contact" class="sidebar-link">Contact Me</a>
-                    </div>
-                </aside>
+      <div class="container">
+        <div class="project-grid">
+          <!-- Main Content -->
+          <div class="project-main">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Project Overview</h2>
+              <p>
+                This project focuses on the development of a comprehensive
+                analytical dashboard using Tableau for the Superstore dataset.
+                The goal is to provide strategic insights for operational
+                managers regarding sales performance, profit margins, and supply
+                chain efficiency across all regions of the United States.
+              </p>
+              <p>
+                By combining historical trend analysis and geographic mapping,
+                this dashboard helps stakeholders identify "blind spots" in
+                their operations, specifically regarding loss-making product
+                categories and shipping cost inefficiencies.
+              </p>
             </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Challenges & Solutions</h2>
+              <div class="challenge-item">
+                <h3>Challenge: Profitability Leakage</h3>
+                <p>
+                  High sales volume was observed in certain sub-categories but
+                  with very low or even negative profit margins.
+                </p>
+                <p>
+                  <strong>Solution:</strong> Developed a Profitability Matrix
+                  and scatter plots to analyze the correlation between discount
+                  levels and profit margins, identifying the optimal discount
+                  thresholds.
+                </p>
+              </div>
+              <div class="challenge-item">
+                <h3>Challenge: Geographic Performance Gap</h3>
+                <p>
+                  Difficulties in comparing performance across regions due to
+                  significant differences in market scale.
+                </p>
+                <p>
+                  <strong>Solution:</strong> Utilized data normalization
+                  techniques and Map visualizations with KPI color schemes to
+                  instantly highlight regions performing below the national
+                  average.
+                </p>
+              </div>
+              <div class="challenge-item">
+                <h3>Challenge: Inventory & Shipping Inefficiency</h3>
+                <p>
+                  High shipping costs on low-priority orders were significantly
+                  reducing overall profit margins.
+                </p>
+                <p>
+                  <strong>Solution:</strong> Integrated Ship Mode vs.
+                  Profitability analysis to recommend shipping policy
+                  adjustments for specific customer segments.
+                </p>
+              </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="project-section">
+              <h2>Key Features</h2>
+              <ul class="features-detailed">
+                <li>
+                  <strong>Sales & Profit Trends</strong>
+                  <p>
+                    Monthly visualizations to identify seasonal patterns and
+                    Year-over-Year (YoY) growth.
+                  </p>
+                </li>
+                <li>
+                  <strong>Geographic Mapping</strong>
+                  <p>
+                    Interactive maps for data exploration down to the state and
+                    city levels.
+                  </p>
+                </li>
+                <li>
+                  <strong>Customer Segmentation</strong>
+                  <p>
+                    Analysis of purchasing behavior across Consumer, Corporate,
+                    and Home Office segments.
+                  </p>
+                </li>
+                <li>
+                  <strong>Product Pareto Analysis</strong>
+                  <p>
+                    Identification of the 20% of products that contribute to 80%
+                    of the company's total profit.
+                  </p>
+                </li>
+                <li>
+                  <strong>Shipping Mode Optimization</strong>
+                  <p>
+                    Dedicated dashboard to monitor cost efficiency based on
+                    shipping methods.
+                  </p>
+                </li>
+                <li>
+                  <strong>Discount Impact Analysis</strong>
+                  <p>
+                    Interactive simulator to visualize the impact of discount
+                    changes on profit margins.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Results -->
+            <div class="project-section">
+              <h2>Results & Impact</h2>
+              <div class="results-grid">
+                <div class="result-card">
+                  <h3>12%</h3>
+                  <p>Profit Margin Increase</p>
+                </div>
+                <div class="result-card">
+                  <h3>15%</h3>
+                  <p>Shipping Cost Reduction</p>
+                </div>
+                <div class="result-card">
+                  <h3>$45K</h3>
+                  <p>Identified Profit Potential</p>
+                </div>
+                <div class="result-card">
+                  <h3>85%</h3>
+                  <p>Inventory Accuracy</p>
+                </div>
+              </div>
+              <p>
+                Through this dashboard, the company successfully identified that
+                discounts exceeding 20% on the Furniture category were
+                negatively impacting aggregate margins. By adjusting data-driven
+                promotional strategies, the company projects an annual net
+                profit increase of $45,000 and improved shipping efficiency.
+              </p>
+            </div>
+
+            <!-- Technologies -->
+            <div class="project-section">
+              <h2>Technologies & Tools</h2>
+              <div class="tech-grid">
+                <div class="tech-card">
+                  <span class="tech-icon">📊</span>
+                  <h4>Tableau</h4>
+                  <p>Data visualization and dashboard creation</p>
+                </div>
+                <div class="tech-card">
+                  <span class="tech-icon">📈</span>
+                  <h4>Excel</h4>
+                  <p>Data analysis and pivot tables</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="project-sidebar">
+            <div class="sidebar-card">
+              <h3>Project Details</h3>
+              <dl>
+                <dt>Category</dt>
+                <dd>Business Analytics</dd>
+                <dt>Duration</dt>
+                <dd>3 months</dd>
+                <dt>Team Size</dt>
+                <dd>Solo Project</dd>
+                <dt>Status</dt>
+                <dd><span class="status-badge completed">Completed</span></dd>
+              </dl>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Technologies</h3>
+              <div class="tag-list">
+                <span class="tag">Tableau</span>
+                <span class="tag">Excel</span>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h3>Links</h3>
+              <a
+                href="https://public.tableau.com/app/profile/putri.vania/viz/SuperstoreDashboardViz/Dashboard"
+                class="sidebar-link"
+                target="_blank"
+                >View Dashboard</a
+              >
+              <a href="mailto:putrivania070@gmail.com" class="sidebar-link">Contact Me</a>
+            </div>
+          </aside>
         </div>
+      </div>
     </section>
 
     <!-- Related Projects -->
     <section class="related-projects">
-        <div class="container">
-            <h2>Related Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">📈</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Customer Segmentation Analysis</h3>
-                        <p>ML project identifying market segments for targeted marketing campaigns.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">ML</span>
-                        </div>
-                        <a href="project-2.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">💹</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Financial Forecasting Model</h3>
-                        <p>Time series forecasting model with 92% accuracy for strategic planning.</p>
-                        <div class="project-tags">
-                            <span class="tag">R</span>
-                            <span class="tag">Statistics</span>
-                        </div>
-                        <a href="project-3.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">🎯</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Marketing Campaign Analysis</h3>
-                        <p>Multi-channel analysis improving ROI by 35% across platforms.</p>
-                        <div class="project-tags">
-                            <span class="tag">Power BI</span>
-                            <span class="tag">Analytics</span>
-                        </div>
-                        <a href="project-4.html" class="project-link">View Project →</a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>Related Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/customer_segmentation.png"
+                alt="Customer Segmentation Analysis"
+              />
             </div>
+            <div class="project-content">
+              <h3>Customer Segmentation Analysis</h3>
+              <p>
+                ML project identifying market segments for targeted marketing
+                campaigns.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">ML</span>
+              </div>
+              <a href="project-2.html" class="project-link">View Project →</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/financial_forecasting.png"
+                alt="Financial Forecasting Model"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Financial Forecasting Model</h3>
+              <p>
+                Time series forecasting model with 92% accuracy for strategic
+                planning.
+              </p>
+              <div class="project-tags">
+                <span class="tag">R</span>
+                <span class="tag">Statistics</span>
+              </div>
+              <a href="project-3.html" class="project-link">View Project →</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="assets/marketing_analytics.png"
+                alt="Marketing Campaign Analysis"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Marketing Campaign Analysis</h3>
+              <p>
+                Multi-channel analysis improving ROI by 35% across platforms.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">Analytics</span>
+              </div>
+              <a href="project-4.html" class="project-link">View Project →</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="project-cta">
-        <div class="container">
-            <h2>Interested in Similar Projects?</h2>
-            <p>I'm available for freelance projects and consulting work.</p>
-            <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
-        </div>
+      <div class="container">
+        <h2>Interested in Similar Projects?</h2>
+        <p>I'm available for freelance projects and consulting work.</p>
+        <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Data Analyst Portfolio. All rights reserved.</p>
-            <p>Designed & Built by Putri Vania</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Data Analyst Portfolio. All rights reserved.</p>
+        <p>Designed & Built by Putri Vania</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
